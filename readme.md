@@ -1,4 +1,3 @@
 > # A review of SOTA paper about LLM architecture
 >
-> * There is not content anymore
-> * something wrong
+> * This is a review for my learning schema or class requirement
