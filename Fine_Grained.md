@@ -1,8 +1,10 @@
-> # Attention Networks for Fine-Grained Image Recognition
+> # Learning Rich Part Hierarchies with Progressive Attention Networks for Fine-Grained Image Recognition
 >
 > * This paper has propose a novel progressively-attention convolutional neural network , which referring  to PA-CNN, for progressively localize parts at multiple scales.
 > * The PA-CNN contains two parts, part proposal network (PPN) and part  rectification network (PRN). PPN generates multiple local attention maps and PRN learns part-specific features from each proposal and provides the PPN with refined part location
 > * the convolutional parameters for a PPN at finer scale can be inherited from the PRN at a coarser scale, enabling a rich part hierarchy to be  learned in a stacked fashion.
+>
+> [Learning Rich Part Hierarchies With Progressive Attention Networks for Fine-Grained Image Recognition | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/8737007)
 >
 > ## Background
 >
