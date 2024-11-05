@@ -32,13 +32,15 @@
 > * First, the PPN takes as input an image in (a) and produces multiple part attentions in (c), which are then cropped to give the part proposals in (d). Next, these part proposals are taken as input by PRN, which independently learns fine-grained features from each of them to generate more precise local attention in (f). These rectified attentions from the PRN are used to refine the PPN attentions via a rectification loss, and with this coupling of networks, the PPN and PRN are jointly trained in a manner that mutually reinforces each other. The convolutional parameters are then passed from the PRN to the PPN, and the part learning procedure is repeated to progressively generate finer-grained parts and features in the hierarchical model.
 >
 >   ![1730638647954](images/Fine_Grained/1730638647954.png)
-> * Each channel of feature maps can be represented as a vector whose element are the coordinates of the peak repon ses over all train image instances, where Ω is the number of training images, and i-x, i-y are the coordinates of the peak response of the i-th image in training set. Several channels of feature maps have reponses to the same semantic part, so if two feature channels describe the same part, their responses on each training sample are suppoesd to the near, the Euclidean distance of their coordinates are small.
+> * Each channel of feature maps can be represented as a vector whose element are the coordinates of the peak reponses over all train image instances, where Ω is the number of training images, and i-x, i-y are the coordinates of the peak response of the i-th image in training set. Several channels of feature maps have reponses to the same semantic part, so if two feature channels describe the same part, their responses on each training sample are suppoesd to the near, the Euclidean distance of their coordinates are small.
 >
 >   ![1730686832522](images/Fine_Grained/1730686832522.png)
 > * We consider the position vector as features, and cluster different channels into N groups as N part detectors.where c is the number of convolution feature channels.
 >
 >   ![1730688632773](images/Fine_Grained/1730688632773.png)
 > * To ensure the channel grouping operation can be optimized in training, we approximate thia grouping by proposing channel grouping layers to regress the permutation over channels.
+>
+>   ![1730773011084](images/Fine_Grained/1730773011084.png)
 > * To learn N attention maps for an image, channel grouping layers are designed to consist of N multilayer perceptron(MLP). Each MLP-i (from 1 to N) takes as input global pooled convolutional features, and produce a weight vector d-i over different channels(form 1 to c), the c is the number of convolution feature channels.
 > * MLP is composed of two fully-connected layers, use tanh as the activation function after the first FC, the sigmoid function after the second one.
 >
