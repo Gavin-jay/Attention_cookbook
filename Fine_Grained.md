@@ -38,7 +38,7 @@
 > * We consider the position vector as features, and cluster different channels into N groups as N part detectors.where c is the number of convolution feature channels.
 >
 >   ![1730688632773](images/Fine_Grained/1730688632773.png)
-> * To ensure the channel grouping operation can be optimized in training, we approximate thia grouping by proposing channel grouping layers to regress the permutation over channels.
+> * To ensure the channel grouping operation can be optimized in training, we approximate thia grouping by proposing channel grouping layers to regress the permutation over channels. The module is showing below:
 >
 >   ![1730773011084](images/Fine_Grained/1730773011084.png)
 > * To learn N attention maps for an image, channel grouping layers are designed to consist of N multilayer perceptron(MLP). Each MLP-i (from 1 to N) takes as input global pooled convolutional features, and produce a weight vector d-i over different channels(form 1 to c), the c is the number of convolution feature channels.
