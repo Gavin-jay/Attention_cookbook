@@ -1,0 +1,5 @@
+> # LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention
+>
+> * we present LLaMA-Adapter, a lightweight adaption method  for efficient instruction tuning of LLaMA. Using 52K self-instruct demonstrations, LLaMA-Adapter only introduces 1.2M learnable parameters upon the frozen  LLaMA 7B model, and costs less than one hour for fine-tuning. Specifically, a  zero-initialized attention mechanism is proposed. It adopts a learnable zero gating  to adaptively inject the instructional cues into LLaMA within self-attention layers,  contributing to a stable training process and superior final performance
+> * Besides  language commands, by incorporating an image encoder, our approach can be  simply extended to a Multi-modal LLM
+> * The Multi-modal LLM achieves superior multi-modal reasoning capacity on several popular  benchmarks (MME, MMBench, LVLM-eHub). Furthermore, we also verify the  proposed zero-initialized attention mechanism for fine-tuning other pre-trained  models (ViT, RoBERTa, CLIP) on traditional vision and language tasks, demonstrating the effectiveness and generalizability of our approach.
