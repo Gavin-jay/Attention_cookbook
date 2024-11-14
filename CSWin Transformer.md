@@ -16,7 +16,7 @@
 > * CSWin is fundamentally different from two aspects. First, we split multi-heads ({h  1  ,...,h  K  }) into two groups and perform self-attention in horizontal and vertical stripes simultaneously. Second, we adjust the stripe width according to the depth network, which can achieve better trade-off between computation cost and capability
 >
 >   ![1731492814346](images/CSWinTransformer/1731492814346.png)
-> * Comparison among different positional encoding mechanisms: APE and CPE introduce the positional information before feeding into the Transformer blocks, while RPE and our LePE operate in each Transformer block. Different from RPE that adds the positional information into the attention calculation, our LePE operates directly upon V and acts as a parallel module.  ∗  Here we only draw the self-attention part to represent the Transformer block for simplicity.
+> * Comparison among different positional encoding mechanisms: APE and CPE introduce the positional information before feeding into the Transformer blocks, while RPE and our LePE operate in each Transformer block. Different from RPE that adds the positional information into the attention calculation, our LePE operates directly upon V and acts as a parallel module.   Here we only draw the self-attention part to represent the Transformer block for simplicity.
 >
 >   ![1731492959349](images/CSWinTransformer/1731492959349.png)
 > * Left: the overall architecture of our proposed CSWin Transformer, Right: the illustration of CSWin Transformer block
