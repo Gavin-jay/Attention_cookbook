@@ -1,6 +1,7 @@
 > # Polysketchformer: Fast transformers via sketches for polynomial kernels
 >
 > * Recent theoretical results indicate the intractability of sub-quadratic softmax attention approximation under reasonable complexity assumptions.
+> * These simple similarity kernel functions σ(⋅) either suffer from some loss of model quality (Katharopoulos et al., 2020) or require additional tweaks of network structures
 > * This paper addresses this challenge by first demonstrating that polynomial attention with high degree can effectively replace softmax without sacrificing model quality
 > * Next, we develop polynomial sketching techniques from numerical linear algebra to achieve linear-time polynomial attention with approximation guarantees.
 > * We also present a block-based algorithm to apply causal masking efficiently. Combining these techniques, we provide PolySketchFormer,

@@ -1,4 +1,4 @@
-> # Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language ProcessingFunnel-Transformer: Filtering out Sequential
+> # Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing
 >
 > * To improve the efficiency, we examine the much-overlooked redundancy in maintaining a full-length token-level presentation, especially for tasks that only require a single-vector presentation of the sequence.
 > * we propose Funnel-Transformer which gradually compresses the sequence of hidden states to a shorter one and hence reduces the computation cost，by re-investing the saved FLOPs from length reduction in constructing a deeper or wider model, we further improve the model capacity
@@ -13,6 +13,6 @@
 > * In addition, to address the challenge that common pretraining objectives such as masked language modeling (MLM) [2] require separate representations for each token, we design a simple strategy to decode a full-length sequence of deep representations from the hidden state of reduced length.
 > * To inherit the high capacity and optimization advantages of the Transformer architecture, the proposed model keeps the same overall skeleton of interleaved S-Attn and P-FFN sub-modules wrapped by residual connection and layer normalization. But differently, to achieve representation compression and computation reduction, our model employs an encoder that gradually reduces the sequence length of the hidden states as the layer gets deeper. In addition, for tasks involving per-token predictions like pretraining, a simple decoder is used to reconstruct a full sequence of token-level representations from the compressed encoder output.
 >
->   ![1732191820231](images/Funnel-transformer/1732191820231.png)
+>   ![1732191820231](../../images/Funnel-transformer/1732191820231.png)
 > * While these methods could potentially be plugged into our model as alternative compression operations, it remains an open question whether compression techniques developed for supervised graph classification can be extended the large-scale language pretraining.
 > * The contracting encoder and expanding decoder framework with residual connections is conceptually similar to the ResUNet [24] for image segmentation. The strided pooling is also widely used to construct modern image recognition networks

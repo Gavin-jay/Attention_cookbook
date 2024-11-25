@@ -14,4 +14,4 @@
 >
 >   In our proposal, the fixed router with random weights generates deterministic inferences. Meanwhile, the presented “self-slimmable” attribute suggests the full models’ expressiveness is adequately exploited.
 >
->   ![1732174098927](images/SMoEDropout/1732174098927.png)
+>   ![1732174098927](../images/SMoEDropout/1732174098927.png)

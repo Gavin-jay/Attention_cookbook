@@ -6,3 +6,10 @@
 > * The experiments show that our LRT model generalizes better and yields lower error rates on both validation and test sets compared to an uncompressed transformer model.
 >
 > ## Detail
+>
+> * LED (Linear Encoder-Decoder) MxN -> MxR @ RxN, the rank is decline
+>
+>   ![1731983641708](../../images/Low-ranktransformer/1731983641708.png)
+>
+>   ![1731983650326](../../images/Low-ranktransformer/1731983650326.png)
+> *

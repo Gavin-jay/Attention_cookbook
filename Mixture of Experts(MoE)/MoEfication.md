@@ -8,4 +8,4 @@
 >
 > * To investigate this problem, we explore whether a Transformer can be converted into an equivalent Mixture-of-Experts (MoE) model (Bengio, 2013), which regards different functional partitions in FFNs as different experts conditionally activated. Specially, we propose MoEfication to discover the functional partitions (experts) in FFNs and build routers for selecting experts. It consists of two phases. (1) Expert Construction: Split a whole feed-forward layer into multiple experts. The goal is to group those neurons that are often activated simultaneously into the same expert network. (2) Expert Selection: Select those experts that contain as many activated neurons as possible for each input to approximate to the original results.
 > * Figure 1: An example of the sparse activation phenomenon and MoEfication. (a) shows the computation process of an FFN for a given input. (b) shows the unused elements and neurons for this input. (c) shows how to construct experts. (d) shows how the MoEfied model handles this input efficiently.
->   ![1732108326985](images/MoEfication/1732108326985.png)
+>   ![1732108326985](../images/MoEfication/1732108326985.png)
