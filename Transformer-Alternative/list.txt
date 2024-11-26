@@ -1,0 +1,3 @@
+Mamba: Linear-time sequence modeling with selective state spaces. 2023.
+RWKV: Reinventing RNNs for the Transformer era. arXiv preprint arXiv:2305.13048, 2023
+Retentive network: A successor to transformer for large language models. arXiv preprint arXiv:2307.08621, 2023.

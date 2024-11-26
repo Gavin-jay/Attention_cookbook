@@ -1,0 +1,2 @@
+Efficient memory management for large language model serving with pagedattention 2023
+Self-attention does not need O (n2) memory 2021
